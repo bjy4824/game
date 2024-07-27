@@ -18,6 +18,8 @@ var fricton_table = 0.0001;//테이블 마찰계수
         width : tableWidth,
         height : tableHeight,
         draw(){
+            ctx.strokeStyle = '#000000'; 
+            ctx.lineWidth = 2;
             ctx.beginPath();
             ctx.fillStyle = this.color;
             ctx.fillRect(this.x, this.y, this.width, this.height); 
@@ -32,6 +34,8 @@ var fricton_table = 0.0001;//테이블 마찰계수
         width : tableWidth + table.width*0.08,
         height : tableHeight + table.width*0.08,
         draw(){
+            ctx.strokeStyle = '#000000'; 
+            ctx.lineWidth = 2;
             ctx.beginPath();
             ctx.fillStyle = this.color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
@@ -278,11 +282,11 @@ var fricton_table = 0.0001;//테이블 마찰계수
             ctx.font = "20px Georgia";
             ctx.fillStyle = "#000000";
             ctx.textAlign = "center";
-            ctx.fillText("100", this.x, this.y+this.height*1.4);
-            ctx.fillText("75", this.x+this.width*0.25, this.y+this.height*1.4);
+            ctx.fillText("0", this.x, this.y+this.height*1.4);
+            ctx.fillText("25", this.x+this.width*0.25, this.y+this.height*1.4);
             ctx.fillText("50", this.x+this.width*0.50, this.y+this.height*1.4);
-            ctx.fillText("25", this.x+this.width*0.75, this.y+this.height*1.4);
-            ctx.fillText("0", this.x+this.width*1, this.y+this.height*1.4);
+            ctx.fillText("75", this.x+this.width*0.75, this.y+this.height*1.4);
+            ctx.fillText("100", this.x+this.width*1, this.y+this.height*1.4);
             
 
         }    
